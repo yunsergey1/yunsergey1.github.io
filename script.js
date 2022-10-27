@@ -25,6 +25,7 @@ profitList.forEach(item => {
 }); 
 
 
+
 // BLOCK FOUR 
 // ВЫВОДИМ КАРТОЧКИ ЧЕРЕЗ ЦИКЛ
 
@@ -79,6 +80,8 @@ flatsList.forEach(item => {
     flatsContainer.insertAdjacentHTML("beforeend", card)
 })
 
+
+
 const planContainer = document.getElementById('plan')
 
 planList.forEach(item => {
@@ -117,3 +120,20 @@ detailsList.forEach(item => {
     `
     detailsContainer.insertAdjacentHTML("beforeend", card)
 }); 
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+})
+
+const modalView = document.querySelector('modal');
+const modalCard = document.querySelector('.modal-card');
+
+modalView.addEventListener('click', () => {
+    modalView.classList.remove('active')
+})
+
+modalCard.addEventListener('click', (e) => {
+    e.stopPropagation();
+})
