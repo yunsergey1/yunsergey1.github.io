@@ -65,7 +65,7 @@ const showCardThree = (num, event) => {
     dotsThreeList.forEach(item => item.classList.remove('go'))
     dotsThreeList[num].classList.add('go')
 
-    let offsetX = 46 - (num * 324)
+    let offsetX = 46 - (num * 334)
     threeCardContainer.style.left = `${offsetX}px`
 }
 
@@ -84,7 +84,7 @@ if (window.innerWidth <= 576) {
             num = 0;
         }
         showCardThree(num)
-    }, 3000);
+    }, 5000);
 
 }
 
@@ -248,12 +248,20 @@ dotsSixList[7].addEventListener('click', showCardSix.bind(null, 7))
 dotsSixList[8].addEventListener('click', showCardSix.bind(null, 8))
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    
+// BLOCK SEVEN
+const sevenButton = document.querySelector('.seven button');
+sevenButton.addEventListener('click', () => {
+    modalView.classList.add('active')
 })
 
+
+// MODAL 
 const modalView = document.querySelector('modal');
 const modalCard = document.querySelector('.modal-card');
+
+document.addEventListener('DOMContentLoaded', () => {
+    modalView.classList.add('active')
+})
 
 modalView.addEventListener('click', () => {
     modalView.classList.remove('active')

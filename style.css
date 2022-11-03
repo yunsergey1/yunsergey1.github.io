@@ -7,20 +7,21 @@
 	box-sizing: border-box;
 
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background-color: #fff;
 	position: relative;
 }
-section, header, footer {
+section, footer {
 	display: flex;
 	justify-content: center;
-	/* border: 2px blue solid; */
 	overflow: hidden;
 }
 .wrap {
 	height: 100%;
-	/* border: 2px red solid; */
-	width: clamp(290px, 82vw, 1100px);
+	width: clamp(295px, 79vw, 1109px);
 	position: relative;
 }
 
@@ -29,7 +30,7 @@ section, header, footer {
 */
 
 .one {
-	height: 960px;
+	height: 959px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -42,7 +43,7 @@ section, header, footer {
 }
 @media (max-width: 576px) {
 	.one {
-		height: 640px;
+		height: 641px;
 	}
 }
 .one-bg {
@@ -69,7 +70,7 @@ section, header, footer {
 	height: 664px;
 	width: 664px;
 	border-radius: 50%;
-	padding: 105px 144px;
+	padding: 102px 131px;
 }
 @media (max-width: 768px) {
 	.one article {
@@ -82,24 +83,45 @@ section, header, footer {
 @media (max-width: 576px) {
 	.one article {
 		top: 155px;
-		left: -70px;
+		left: -62px;
 		height: 336px;
 		width: 336px;
-		padding: 48px 70px;
+		padding: 59px 69px;
 	}
 }
 
-.one img, .one p, .one h1 {
-	padding-bottom: 5%;
+.one img {
+	padding-bottom: 7%;
 }
 @media (max-width: 576px) {
 	.one img {
 		width: 110px;
+		padding-bottom: 8.5%;
+	}
+}
+.one h1 {
+	padding-bottom: 4%;
+}
+@media (max-width: 576px) {
+	.one h1 {
+		padding-bottom: 1%;
+		padding-left: 2px;
+	}
+}
+.one p {
+	line-height: 110%;
+	padding-bottom: 4.8%;
+}
+@media (max-width: 576px) {
+	.one p {
+		line-height: 109%;
+		padding-bottom: 6%;
+		padding-left: 4px;
 	}
 }
 
 .one button {
-	padding: 13px 22px;
+	padding: 13px 27px 10px;
 	background: linear-gradient(34.66deg, #BC1822 16.88%, #E53322 76%);
 	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
 	border-radius: 50px;
@@ -108,10 +130,16 @@ section, header, footer {
 	font-weight: 500;
 	border: none;
 	cursor: pointer;
+	
+}
+.one button:hover {
+	background: linear-gradient(34.66deg, #a3141e 16.88%, #d12d1e 76%);
 }
 @media (max-width: 576px) {
 	.one button {
+		margin-left: 2px;
 		font-size: 12px;
+		padding: 8.5px 16px 9px;
 	}
 }
 
@@ -119,8 +147,8 @@ section, header, footer {
 	position: absolute;
 	width: 268px;
 	height: 268px;
-	left: 370px;
-	top: 77px;
+	left: 348px;
+    top: 74px;
 	border-radius: 200px;
 	background: linear-gradient(147.64deg, #C5D210 13.56%, #82B428 85.54%);
 	z-index: 2;
@@ -136,15 +164,15 @@ section, header, footer {
 		width: 156px;
 		height: 156px;
 		top: 413px;
-		left: 52%;
+		left: 178px;
 	}
 }
 .one .bubble-blue {
 	position: absolute;
 	width: 105px;
 	height: 105px;
-	left: 598px;
-	top: 345px;
+	left: 586px;
+    top: 343px;
 	background: linear-gradient(147.64deg, #8DCEED 13.56%, #2DA3DC 85.54%);
 	border-radius: 200px;
 	z-index: 2;
@@ -159,7 +187,7 @@ section, header, footer {
 	.one .bubble-blue {
 		width: 82px;
 		height: 82px;
-		left: 136px;
+		left: 109px;
 		top: 71px;
 	}
 }
@@ -200,13 +228,14 @@ section, header, footer {
 	.three .dots-control,
 	.five .dots-control {
 		position: absolute;
-		bottom: 0;
+		bottom: 0px;
 		width: 100%;
-		height: 30px;
+		height: 24px;
 		background-color: white;
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
+		padding-left: 11px;
 	}
 	.five .dots-control {
 		position: relative;
@@ -258,18 +287,28 @@ section, header, footer {
 */
 
 .two {
-	height: 598px;
+	height: 597px;
 }
 @media (max-width: 768px) {
 	.two {
 		height: auto;
 	};
 }
+@media (max-width: 576px) {
+	.two {
+		height: auto;
+		padding-left: 17px;
+		padding-bottom: 6px;
+	};
+}
 .two .wrap {
 	display: flex;
-	align-items: center;
+	align-items: start;
 	flex-direction: row;
 	justify-content: space-between;
+	padding-top: 120px;
+	width: clamp(295px, 79vw, 1117px);
+    padding-right: 7px;
 }
 @media (max-width: 768px) {
 	.two .wrap {
@@ -283,14 +322,32 @@ section, header, footer {
 }
 @media (max-width: 768px) {
 	.two article {
-		width: 100%;
+		width: 97%;
 	}
 }
-.two p {
-	padding-top: 1.5em;
+.two h3 {
+	padding-bottom: 48px;
+}
+@media (max-width: 576px) {
+	.two h3 {
+		padding-bottom: 15px;
+	}
+}
+.two p:not(:last-child) {
+	padding-bottom: 1.2em;
+}
+@media (max-width: 576px) {
+	.two p {
+		font-size: 14px;
+		line-height: 115%;
+		margin-left: -2px;
+	}
+	.two p:not(:last-child) {
+		padding-bottom: 1.4em;
+	}
 }
 .two .two-card {
-	width: 56%;
+	width: 58%;
 	border-radius: 10px;
 	height: 390px;
 	overflow: hidden;
@@ -298,9 +355,9 @@ section, header, footer {
 }
 @media (max-width: 768px) {
 	.two .two-card {
-		margin: 40px 0 40px;
+		margin: 39px 0 40px 1px;
 		width: 100%;
-		height: auto;
+		height: 187px;
 	}
 }
 .two img {
@@ -313,6 +370,7 @@ section, header, footer {
 	.two img {
 		position: relative;
 		width: 100%;
+		height: 187px;
 	}
 }
 
@@ -329,19 +387,29 @@ section, header, footer {
 	position: relative;
 }
 .three .wrap {
-
+	width: clamp(305px, 79vw, 1141px);
+    padding-right: 31px;
+}
+@media (max-width: 576px) {
+	.three .wrap {
+		padding-right: 0;
+	}
 }
 .three h3 {
-	padding-bottom: 50px;
+
+	padding-bottom: 48px;
 }
 @media (min-width: 769px) {
 	.three h3 {
 		color: #2DA3DC;
+		padding-left: 7px;
 	}
 }
 @media (max-width: 576px) {
 	.three h3 {
-		padding-bottom: 20px;
+		padding-bottom: 32px;
+		padding-left: 14px;
+		padding-right: 88px;
 	}
 }
 .three .slider {
@@ -353,7 +421,7 @@ section, header, footer {
 	position: relative;
 	min-height: 480px;
 	/* border: solid 1px springgreen; */
-	padding-bottom: 110px;
+	padding-bottom: 47px;
 }
 .three .slider::-webkit-scrollbar {
 	width: 0;
@@ -371,15 +439,15 @@ section, header, footer {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
-	gap: 22px;
+	justify-content: space-between;
+	gap: 30px 28px;
 }
 @media (max-width: 576px) {
 	.three .card-container {
 		flex-wrap: nowrap;
 		position: absolute;
 		left: 46px;
-		gap: 34px;
+		gap: 44px;
 		transition: 1s;
 	}
 }
@@ -399,6 +467,7 @@ section, header, footer {
 	.three .card {
 		height: 468px;
 		width: 290px;
+		border-radius: 21px;
 	}
 	.three .card:last-child {
 		margin-right: 15vw;
@@ -409,7 +478,7 @@ section, header, footer {
 	height: 100%;
 	padding: 0 28px 0;
 	position: absolute;
-	top: 146px;
+	top: 137px;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 	background-blend-mode: multiply;
 	border-radius: 0px 0px 10px 10px;
@@ -418,7 +487,8 @@ section, header, footer {
 }
 @media (max-width: 576px) {
 	.three .card-content {
-		top: 336px;
+		top: 334px;
+		padding-left: 20px;
 		background: linear-gradient(180deg, rgba(0, 0, 0, 0), #000000 30%);
 		background-blend-mode: multiply;
 		border-radius: 0px 0px 20px 20px;
@@ -450,7 +520,7 @@ section, header, footer {
 @media (max-width: 576px) {
 	.three .title {
 		font-size: 18px;
-		line-height: 130%;
+		line-height: 110%;
 	}
 }
 .three .text {
@@ -473,9 +543,8 @@ section, header, footer {
 .three .dots-control {
 	position: relative;
 	height: auto;
-	margin-top: 20px;
-	margin-bottom: 50px;
-	background-color: none;
+	margin-top: 13px;
+	margin-bottom: 57px;
 }
 
 /* 
@@ -492,6 +561,21 @@ section, header, footer {
 @media (max-width: 810px) {
 	.four {
 		height: 782px;
+	}
+}
+
+.four .wrap {
+	width: clamp(284px, 75vw, 1128px);
+}
+.four h3 {
+	width: 400px;
+	padding-top: 30px;
+}
+@media (max-width: 576px) {
+	.four h3 {
+		width: 100%;
+		padding-top: 0px;
+		padding-left: 3px;
 	}
 }
 
@@ -554,6 +638,8 @@ section, header, footer {
 		height: 626px;
 		width: 297px;
 		padding: 24px;
+		margin-top: 18px;
+		border-radius: 14px;
 	}
 	.four .card:last-child {
 		margin-right: 7vw;
@@ -628,9 +714,9 @@ section, header, footer {
 	.four .title {
 		text-align: center;
 		width: 100%;
-		font-size: 17px;
-		padding-top: 20px;
-		padding-bottom: 11px;
+		font-size: 17.7px;
+		padding-top: 31px;
+		padding-bottom: 15px;
 	}
 }
 .four .text {
@@ -647,7 +733,7 @@ section, header, footer {
 		font-size: 12.5px;
 		line-height: 17px;
 		text-align: center;
-		margin-bottom: 28px;
+		margin-bottom: 19px;
 	}
 }
 .four button {
@@ -661,6 +747,10 @@ section, header, footer {
 	line-height: 150%;
 	text-align: center;
 	color: #FFFFFF;
+	cursor: pointer;
+}
+.four button:hover {
+	background: linear-gradient(34.66deg, #739e23 16.88%, #acb80d 76%);
 }
 @media (max-width: 810px) {
 	.four button {
@@ -681,7 +771,7 @@ section, header, footer {
 @media (max-width: 810px) {
 	.four .line {
 		margin-top: 17px;
-		margin-bottom: 21px;
+		margin-bottom: 18px;
 	}
 }
 .four .inner-two {
@@ -691,6 +781,7 @@ section, header, footer {
 @media (max-width: 810px) {
 	.four .inner-two {
 		flex-direction: column;
+		padding-left: 13px;
 	}
 }
 
@@ -704,8 +795,12 @@ section, header, footer {
 	.four .price table .title td, 
 	.four .area table .title td {
 		font-size: 13px;
-		line-height: 20px;
+		line-height: 19px;
 		text-align: start;
+	}
+	.four .area table .title td:not(:first-child),
+	.four .area table .text td:not(:first-child) {
+		padding-left: 28px;
 	}
 }
 .four .price {
@@ -713,7 +808,7 @@ section, header, footer {
 }
 @media (max-width: 810px) {
 	.four .price {
-		padding: 0 0 12px;
+		padding: 0 0 5px;
 	}
 }
 
@@ -736,13 +831,17 @@ section, header, footer {
 .four .price table .text td span::before {
 	content: " ~ ";
 }
+.four .price table .text td span::after {
+	content: " Р/мес";
+}
 @media (max-width: 810px) {
 	.four .price table .text td {
-		font-size: 16px;
+		font-size: 16.5px;
 		line-height: 21px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		padding-left: 1px;
 	} 
 	.four .area table .text td {
 		font-size: 16px;
@@ -751,10 +850,13 @@ section, header, footer {
 	}
 	.four .price table .text td span {
 		font-weight: normal;
-		font-size: 16px;
+		font-size: 17px;
 	}
 	.four .price table .text td span::before {
 		content: " или ";
+	}
+	.four .price table .text td span::after {
+		content: " руб./мес.";
 	}
 }
 
@@ -982,9 +1084,13 @@ section, header, footer {
 	line-height: 150%;
 	text-align: center;
 	color: #FFFFFF;
+	cursor: pointer;
+}
+.five button:hover {
+	background: linear-gradient(34.66deg, #739e23 16.88%, #acb80d 76%);
 }
 @media (max-width: 810px) {
-	.four button {
+	.five button {
 		font-size: 14.7px;
 		padding: 8px 0;
 		width: 177px;
@@ -1232,7 +1338,6 @@ section, header, footer {
 	}
 }
 
-
 .seven button {
 	background: linear-gradient(34.66deg, #82B428 16.88%, #C5D210 76%);
 	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
@@ -1244,6 +1349,10 @@ section, header, footer {
 	line-height: 150%;
 	text-align: center;
 	color: #FFFFFF;
+	cursor:pointer;
+}
+.seven button:hover {
+	background: linear-gradient(34.66deg, #739e23 16.88%, #acb80d 76%);
 }
 @media (max-width: 768px) {
 	.seven button {
@@ -1514,6 +1623,10 @@ section, header, footer {
 	line-height: 150%;
 	text-align: center;
 	color: #FFFFFF;
+	cursor: pointer;
+}
+.nine button:hover {
+	background: linear-gradient(34.66deg, #739e23 16.88%, #acb80d 76%);
 }
 .nine button ::after {
 	content: 'Отправить';
@@ -1644,6 +1757,7 @@ modal {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 5;
+	transition: 2s;
 }
 
 .active {
@@ -1667,6 +1781,7 @@ modal form {
 	padding: 80px 77px 55px;
 	background: #FFFFFF;
 	border-radius: 20px;
+	transition: 2s;
 }
 @media (max-width: 768px) {
 	modal form {
@@ -1739,8 +1854,11 @@ modal button {
 	border-radius: 50px;
 	border: none;
 	color: #fff;
+	cursor: pointer;
 }
-
+modal button:hover {
+	background: linear-gradient(34.66deg, #278fc4 16.88%, #2abdc5 76%);
+}
 @media (max-width: 768px) {
 	modal button {
 		font-size: 18px;
