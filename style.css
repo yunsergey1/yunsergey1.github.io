@@ -893,8 +893,10 @@ section, footer {
 .five {
 
 }
-.five .wrap {
-
+@media (max-width: 576px) {
+	.five .wrap {
+		width: 316px;
+	}
 }
 .five .slider {
 	height: 100%;
@@ -903,7 +905,6 @@ section, footer {
 	-ms-overflow-style: none;
     scrollbar-width: none;
 	position: relative;
-	/* border: solid 1px springgreen; */
 	margin-bottom: 20px;
 }
 .five .slider::-webkit-scrollbar {
@@ -915,7 +916,7 @@ section, footer {
 		padding-bottom: 0;
 		width: 130%;
 		height: 618px;
-		/* margin-left: -9vw; */
+		margin-left: -9vw;
 		padding-left: 9vw;
 		margin-bottom: 0;
 	}
@@ -960,7 +961,7 @@ section, footer {
 
 .five .card-content {
 	height: 50%;
-	padding: 0 28px 30px;
+	padding: 0 31px 23px;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -975,7 +976,7 @@ section, footer {
 		background: linear-gradient(0deg, #646865 0%, rgba(0, 0, 0, 0) 100%);
 		background-blend-mode: multiply;
 		border-radius: 0px 0px 20px 20px;
-		padding-bottom: 50px;
+		padding-bottom: 43px;
 	}
 }
 
@@ -1000,7 +1001,7 @@ section, footer {
 	.five .title {
 		font-weight: 800;
 		font-size: 24px;
-		line-height: 130%;
+		line-height: 109%;
 		text-align: center;
 	}
 }
@@ -1026,7 +1027,7 @@ section, footer {
 	background-size: cover;
 	background-position-x: right;
 	height: 350px;
-	padding: 100px 65px;
+	padding: 100px 55px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -1049,14 +1050,17 @@ section, footer {
 		background-position-y: top;
 		background-repeat: no-repeat;
 		height: 650px;
-		width: 100%;
+		width: 331px;
 		filter: drop-shadow(8px 8px 15px rgba(0, 0, 0, 0.12));
 		/* border-radius: 20px; */
-		margin-bottom: 60px;
-		padding: 57px 20px 57px;
+		margin-bottom: 36px;
+		/* padding-left: 16px; */
+		padding-top: 66px;
+		padding-bottom: 56px;
 	}
 	.five .inner {
 		height: 100%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -1065,19 +1069,28 @@ section, footer {
 .five h3{
 	color: #646865;
 	width: 284px;
-	padding-bottom: 30px;
+	padding-bottom: 18px;
 }
 @media (max-width: 768px) {
 	.five h3 {
 		font-size: 36px;
 		line-height: 45px;
+		padding-left: 32px;
+	}
+}
+@media (max-width: 576px) {
+	.five a {
+		display: flex;
+		justify-content: start;
+		padding-left: 20px;
+		text-decoration: none;
 	}
 }
 .five button {
 	background: linear-gradient(34.66deg, #82B428 16.88%, #C5D210 76%);
 	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
 	border-radius: 50px;
-	padding: 13px 24px;
+	padding: 13px 16px 9px;
 	border: none;
 	font-weight: 500;
 	font-size: 20px;
@@ -1091,9 +1104,9 @@ section, footer {
 }
 @media (max-width: 810px) {
 	.five button {
-		font-size: 14.7px;
-		padding: 8px 0;
-		width: 177px;
+		font-size: 20px;
+    	padding: 11px 28px;
+		/* width: 177px; */
 	}
 }
 
@@ -1109,11 +1122,15 @@ section, footer {
 	/* padding-bottom: 30px; */
 }
 .six .wrap {
-
+    width: clamp(295px, 79vw, 1126px);
 }
 .six h3 {
-	padding-bottom: 50px;
-	color: #2DA3DC;
+	padding-bottom: 43px;
+    color: #2DA3DC;
+    text-align: center;
+    font-size: 48px;
+    line-height: 126%;
+    padding-left: 48px;
 }
 @media (max-width: 769px) {
 	.six h3 {
@@ -1128,8 +1145,8 @@ section, footer {
     scrollbar-width: none;
 	position: relative;
 	min-height: 480px;
-	/* border: solid 1px springgreen; */
 	padding-bottom: 40px;
+	padding-left: 5px;
 }
 .six .slider::-webkit-scrollbar {
 	width: 0;
@@ -1149,7 +1166,7 @@ section, footer {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	gap: 18px;
+	gap: 30px 26px;
 	transition: 1s;
 }
 @media (max-width: 768px) {
@@ -1185,9 +1202,9 @@ section, footer {
 
 .six .card-content {
 	height: 100%;
-	padding: 0 28px 0;
+	padding: 0 30px 0;
 	position: absolute;
-	top: 146px;
+	top: 137px;
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 	background-blend-mode: multiply;
 	border-radius: 0px 0px 10px 10px;
@@ -1218,6 +1235,7 @@ section, footer {
 @media screen and (max-width: 768px) {
 	.six .title_wrap {
 		margin-bottom: 38px;
+		padding: 0 15px 2px 0px;
 	}
 }
 .six .title {
@@ -1227,8 +1245,10 @@ section, footer {
 }
 @media screen and (max-width: 768px) {
 	.six .title {
-		font-size: 18px;
-		line-height: 130%;
+		font-size: 24px;
+		line-height: 100%;
+		font-weight: 800;
+		text-align: center;
 	}
 }
 .six .text {
@@ -1299,10 +1319,13 @@ section, footer {
 		background-size: cover;
 	}
 }
+.seven .wrap {
+	width: clamp(295px, 79vw, 1109px);
+}
 .seven article {
 	height: 100%;
 	width: 442px;
-	padding: 69px 0 62px;
+	padding: 60px 0 69px 4px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -1310,6 +1333,7 @@ section, footer {
 }
 @media (max-width: 768px) {
 	.seven article {
+		padding: 37px 0 116px 0px;
 		width: 253px;
 		height: auto;
 	}
@@ -1322,8 +1346,12 @@ section, footer {
 		font-weight: 800;
 		font-size: 24px!important;
 		line-height: 120%;
-		padding-bottom: 20px;
+		padding-bottom: 13px;
 	}
+}
+.seven p {
+	line-height: 119%;
+    padding-bottom: 14px;
 }
 @media (max-width: 768px) {
 	.seven p {
@@ -1335,6 +1363,7 @@ section, footer {
 	.seven p {
 		font-size: 18px!important;
 		line-height: 120%;
+		padding-bottom: 0;
 	}
 }
 
@@ -1368,9 +1397,8 @@ section, footer {
 			⭐ ⭐ ⭐ ⭐ BLOCK EIGHT ⭐ ⭐ ⭐ ⭐ 
 */
 
-
 .eight {
-	padding: 100px 0;
+	padding: 98px 0;
 }
 @media (max-width: 768px) {
 	.eight {
@@ -1384,12 +1412,13 @@ section, footer {
 	flex-direction: row;
 	justify-content: space-between;
 	height: 449px;
+	width: clamp(295px, 79vw, 1100px);
 }
 @media (max-width: 768px) {
 	.eight .wrap {
 		flex-direction: column;
-		padding-top: 46px;
-		padding-bottom: 40px;
+		padding-top: 42px;
+		padding-bottom: 18px;
 		height: auto;
 	}
 }
@@ -1407,16 +1436,23 @@ section, footer {
 	color: #2DA3DC;
 }
 .eight p {
-	padding-top: 1.5em;
+	padding-top: 2em;
 }
 @media (max-width: 768px) {
 	.eight .p-1 {
-		padding-bottom: 20px;
+		font-size: 18px;
+		line-height: 121%;
+		padding-top: 10px;
+		padding-bottom: 14px;
+		padding-right: 22px;
 	}
 	
 }
 .eight .p2-2 {
 	display: none;
+}
+.eight .p2-1 {
+	padding-top: 0;
 }
 @media (max-width: 768px) {
 	.eight .p2-1 {
@@ -1424,6 +1460,10 @@ section, footer {
 	}
 	.eight .p2-2 {
 		display: block;
+		font-size: 18px;
+		line-height: 121%;
+		padding-top: 23px;
+		padding-bottom: 14px;
 	}
 }
 .eight .two-card {
@@ -1462,7 +1502,7 @@ section, footer {
 
 
 .nine {
-	height: 473px;
+	height: 389px;
 	background: url(/img/nine-wallpaper.jpg);
 	background-position: 50% 0%;
 	background-size: cover;
@@ -1473,7 +1513,7 @@ section, footer {
 		height: 640px;
 		background-size: cover;
 		background-position: 60% 0%;
-		padding-bottom: 47px;
+		padding-bottom: 21px;
 	}
 }
 @media (max-width: 576px) {
@@ -1511,20 +1551,23 @@ section, footer {
 	/* width: 100%; */
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: start;
 	justify-content: space-between;
+	width: clamp(295px, 79vw, 1136px);
+	padding-right: 26px;
 }
 @media (max-width: 768px) {
 	.nine .wrap {
 		flex-direction: column-reverse;
-		justify-content: flex-start;
-		gap: 40px;
+		/* justify-content: flex-start; */
+		/* gap: 40px; */
+		padding-top: 221px;
 	}
 }
 .nine article {
 	height: auto;
 	width: 411px;
-	/* padding: 69px 0 62px; */
+	padding-top: 55px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -1532,47 +1575,53 @@ section, footer {
 }
 @media (max-width: 768px) {
 	.nine article {
-		width: 83%;
+		width: 100%;
 		height: auto;
+		padding-top: 29px;
+		padding-bottom: 22px;
 	}
 }
 .nine h3 {
-	padding-bottom: 32px;
+	padding-bottom: 52px;
+	line-height: 124%;
 }
 @media (max-width: 768px) {
 	.nine h3 {
 		font-weight: 800;
 		font-size: 24px!important;
 		line-height: 120%;
-		padding-bottom: 20px;
+		padding-bottom: 7px;
 	}
 }
 .nine p {
 	color: #fff;
+	line-height: 110%;
 }
 @media (max-width: 768px) {
 	.nine p {
 		font-size: 18px!important;
-		line-height: 120%;
+		line-height: 112%;
 	}
 }
 @media (max-width: 576px) {
 	.nine p {
 		font-size: 18px!important;
-		line-height: 120%;
+		line-height: 112%;
 	}
 }
 
 .nine form {
 	display: flex;
 	flex-direction: column;
-	width: 56%;
+	width: 50.5%;
 	align-items: flex-end;
+	padding-top: 90px;
 }
 @media (max-width: 768px) {
 	.nine form {
 		align-items: flex-start;
-		width: 83%;
+		width: 109%;
+		padding-bottom: 14px;
 	}
 }
 .nine form input {
@@ -1587,9 +1636,11 @@ section, footer {
 }
 @media (max-width: 768px) {
 	.nine form input {
-		font-size: 18px;
+		font-size: 12px;
 		height: 52px;
 		margin-bottom: 15px;
+		padding-left: 11px;
+		padding-top: 10px;
 	}
 }
 .nine form input::placeholder {
@@ -1597,8 +1648,9 @@ section, footer {
 	font-size: 26px;
 	/* line-height: 110%; */
 	color: #C4C4C4;
+	/* color: blueviolet; */
 }
-@media (max-widht: 768px) {
+@media (max-width: 768px) {
 	.nine form input::placeholder {
 		font-size: 18px;
 	}
@@ -1616,7 +1668,7 @@ section, footer {
 	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
 	border-radius: 50px;
 	width: 275px;
-	padding: 13px 24px;
+    padding: 11px 24px;
 	border: none;
 	font-weight: 500;
 	font-size: 20px;
@@ -1624,12 +1676,14 @@ section, footer {
 	text-align: center;
 	color: #FFFFFF;
 	cursor: pointer;
+	margin-right: 4px;
 }
 .nine button:hover {
 	background: linear-gradient(34.66deg, #739e23 16.88%, #acb80d 76%);
 }
 .nine button ::after {
 	content: 'Отправить';
+	font-size: 18px;
 }
 @media (max-width: 768px) {
 	.nine button {
@@ -1646,7 +1700,7 @@ section, footer {
 	.nine button {
 		font-size: 18px;
 		width: 186px;
-		padding: 13px 8px;
+		padding: 6px 8px;
 	}
 }
 
