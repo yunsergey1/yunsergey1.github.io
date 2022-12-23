@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing Work 5</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex justify-content-center">
+
+	<div class="wrap">
+
+		<aside class="d-flex flex-column flex-shrink-0">
+	
+			<a href="/" class="logo">
+				<img src="/img/sb-logo.svg" alt="logo">
+			</a>
+			<ul class="nav nav-pills flex-column">
+				<li class="nav-item">
+					<a href="#" class="nav-link" aria-current="page">
+						<img src="/img/sb-home.svg" alt="home"><span>Главная</span>
+					</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link" aria-current="page">
+						<img src="/img/sb-shop.svg" alt="home"><span>Мои магазины</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link" aria-current="page">
+						<img src="/img/sb-promo.svg" alt="home"><span>Промоматериалы</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link" aria-current="page">
+						<img src="/img/sb-stat.svg" alt="home"><span>Статистика</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link" aria-current="page">
+						<img src="/img/sb-balance.svg" alt="home"><span>Баланс</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link" aria-current="page">
+						<img src="/img/sb-person.svg" alt="home"><span>Персональные денные</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link" aria-current="page">
+						<img src="/img/sb-faq.svg" alt="home"><span>FAQ</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link" aria-current="page">
+						<img src="/img/sb-support.svg" alt="home"><span>Техподдержка</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link" aria-current="page">
+						<img src="/img/sb-logout.svg" alt="home"><span>Выход</span>
+					</a>
+				</li>
+			</ul>
+	
+		</aside>
+	
+		<div class="wrapper">
+			<header>
+				<nav class="d-none d-lg-block" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Главная</a></li>
+						<li class="breadcrumb-item active" aria-current="page" id="bc">Мои магазины</li>
+					</ol>
+				</nav>
+				<div class="inner d-flex align-items-center">
+					<div class="message d-flex justify-content-center align-items-center">
+						<img src="/img/h-mail.svg" alt="message">
+						<div class="indicator__box d-flex justify-content-center align-items-center"><div class="indicator"></div></div>
+					</div>
+					<div class="profile">
+						<img src="/img/h-avatar.png" alt="avatar">
+						<span>Максим Добжанский</span>
+					</div>
+				</div>
+			</header>
+	
+			<main>
+				<button type="button" class="btn btn-success create" id="create"><img src="/img/m-plus.svg" alt="">&nbsp;Создать свой магазин</button>
+				<h1>Управление магазинами</h1>
+
+				<div class="stores">
+					<table class="table">
+						<thead>
+							<tr>
+								<th scope="col">№</th>
+								<th scope="col">Название</th>
+								<th scope="col">Адрес</th>
+								<th scope="col">Действие</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Дипломная работа</td>
+								<td>http://yunsergey1.github.io</td>
+								<td>
+									<button type="button" class="btn btn-success edit"><img src="/img/m-edit.svg" alt=""><span class="d-none d-lg-inline">Редактировать</span></button>
+									<button type="button" class="btn btn-secondary delete"><img src="/img/m-cancel.svg" alt=""><span class="d-none d-lg-inline">Удалить</span></button>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Дипломная работа</td>
+								<td>http://yunsergey1.github.io</td>
+								<td>
+									<button type="button" class="btn btn-success edit"><img src="/img/m-edit.svg" alt=""><span class="d-none d-lg-inline">Редактировать</span></button>
+									<button type="button" class="btn btn-secondary delete"><img src="/img/m-cancel.svg" alt=""><span class="d-none d-lg-inline">Удалить</span></button>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Дипломная работа</td>
+								<td>http://yunsergey1.github.io</td>
+								<td>
+									<button type="button" class="btn btn-success edit"><img src="/img/m-edit.svg" alt=""><span class="d-none d-lg-inline">Редактировать</span></button>
+									<button type="button" class="btn btn-secondary delete"><img src="/img/m-cancel.svg" alt=""><span class="d-none d-lg-inline">Удалить</span></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="popup__wrap">
+					<div class="popup p-4">
+						<div class="title d-flex justify-content-between pb-4">
+							<h4>Создать магазин</h4>
+							<img class="close-popup" src="/img/popup-close.svg" alt="close">
+						</div>
+	
+						<div class="inner d-flex justify-content-between pb-4">
+							<div class="template">
+								<span><strong>Шаблон</strong></span>
+								<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+									<option selected>Стандартный</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+							<div class="template">
+								<span><strong>Цветовая схема</strong></span>
+								<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+									<option selected>Классическая</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+							</div>
+						</div>
+	
+						<div class="inner pb-2">
+							<span><strong>Домен</strong></span>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+								<span class="input-group-text" id="basic-addon2">@example.com</span>
+							</div>
+						</div>
+	
+						<div class="info d-flex mb-4">
+							<img src="/img/popup-info.png" alt="info">
+							<span>
+								В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5. После создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по ссылке
+							</span>
+						</div>
+	
+						<div class="inner-btn">
+							<button type="button" class="btn cancel">Отмена</button>
+							<button type="button" class="btn create1">Создать</button>
+	
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+	</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
